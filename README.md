@@ -16,6 +16,12 @@ Running App prototype developed as part of an HCI module. Allows for users to up
 
 # Features
 
+## Map
+
+[![Screen_Shot_2018-01-17_at_20.13.40.png](https://s13.postimg.org/dhzeaqk5z/Screen_Shot_2018-01-17_at_20.13.40.png)](https://postimg.org/image/8jbvw7gcz/)
+
+The map is the central focus of the page. Large and in the way - for good reason. The map is built off the Google Maps API, yet altered in such a way that statistics and route are discernible at a quick glance. The top-right corner displays a legend containing different workout intensities, calculated using `0mp/h - 5mp/h walking`, `5mp/h - 6mp/h jogging` and `6mp/h+ running`, these colours are further displayed on the route to see where progress needs to be made.
+
 ## Statistics
 
 [![Screen_Shot_2018-01-17_at_19.57.58.png](https://s13.postimg.org/zehbxi5fr/Screen_Shot_2018-01-17_at_19.57.58.png)](https://postimg.org/image/v5clvc26b/)
