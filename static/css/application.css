@@ -1,0 +1,200 @@
+*{
+    font-family: 'Open Sans'
+}
+a{
+    color: black;
+}
+#map_canvas{ width: 100%; height: 65vh;}
+#options{margin: auto; list-style-type: none; }
+#options li a{ padding: 0.5em 1em; display: block; }
+#options li.current a{ background-color: #ccc; }
+#options li a:hover{ background-color: #ddd; }
+#stats{width:100%; float:left; padding: 72px 24px; box-sizing: border-box; overflow: hidden; text-align: center;  background-color:rgb(238, 238, 238);}
+#achi{width:100%; float:right;}
+#options{width:80%; padding-left: 0px; text-align: center;}
+#static{position: relative; width: 100%;}
+#restofpage{background-color:rgb(238, 238, 238); padding: 72px 24px; box-sizing: border-box; overflow: hidden;}
+#achi{width:100%; padding: 72px 24px; text-align: center;}
+#end{background-color:rgb(33, 33, 33); padding: 72px 24px; box-sizing: border-box; overflow: hidden;text-align: center;}
+nav {
+	width: 100%;
+    float: left;
+    color: white;
+    background-color: rgb(0, 188, 212);
+    text-align: center;
+    height: 64px;
+    top: 0;
+    bottom: 0;
+    z-index: 999;
+    position: fixed;
+    padding-left: 24px;
+}
+
+.image-upload > input
+{
+    display: none;
+}
+
+.image-upload{
+    float: right;
+    margin-right: 4%;
+    position: absolute;
+    right: 0px;
+    top: calc(61vh + 64px);
+}
+
+.image-upload img{
+    height: 8vh;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 8vh;
+    transition: 0.3s;
+}
+.image-upload img:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.icon{
+    float: left;
+    height: 50px;
+    padding-top: 7px;
+}
+.icon img{
+    float: right;
+    height: 50px;
+}
+
+#achis{
+    padding-left: 5%;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-gap: 5%;
+    text-align: center;
+}
+
+#achis img{
+    -webkit-filter: grayscale(100%);
+    height: 70px;
+}
+#achis p{
+    color: #757575;
+}
+
+#achi h4{
+    text-align: left;
+    padding-left: 10%;
+}
+
+#goal{
+    height: 20px; 
+    background: #4587EA; 
+    width:0%; 
+    text-align:center; 
+    vertical-align: center; 
+    line-height:20px; 
+    color: white;
+}
+
+#legend {
+    background: #fff;
+    padding: 10px;
+    margin: 10px;
+    margin-top: 50px;
+    z-index: 4;
+    position: absolute;
+    right: 0px;
+    opacity: 0.8;
+    border-radius: 2px;
+    box-shadow: 6px 6px 4px -2px rgba(0,0,0,0.11);
+  }
+  #legend:hover{
+      opacity: 1;
+  }
+
+  #legend img {
+    vertical-align: middle;
+    height: 20px;
+  }
+
+  #achis p{
+      padding-top: 10px;
+  }
+
+  #end p{
+    color: rgba(255, 255, 255, 0.54);
+    margin: none;
+  }
+
+#options a{
+    color: black;
+}
+
+#card{
+    width: 30%;
+    background-color: white;
+    height: 15vh;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+#card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+#card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+#login-register {
+    z-index: 999;
+    right: 25px; 
+    position: fixed; 
+    padding-top: calc(32px - 8pt);
+}
+
+#homepage {
+    margin-top: 64px;
+    width: 100vw;
+}
+
+#subtitle {
+    font-size: 20pt;
+    font-weight: bold;
+    text-align: center;
+}
+
+#text {
+    font-size: 17pt;
+    text-align: center;
+}
+
+#home-img {
+    border-radius: 10px;
+    width: 100%;
+    padding: 5%;
+}
+
+#homepage div {
+    width: 50%;
+    padding: 50px;
+    padding-top: 80px;
+}
+
+#homepage h1 {
+    text-align: center;
+    font-size: 50pt;
+}
+
+#homepage h2 {
+    font-size: 25pt;
+    text-align: center;
+}
+
+#image-div {
+
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/runner_smartwatch.jpg')
+}

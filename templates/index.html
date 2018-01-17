@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block title_block %}
+  Index
+{% endblock %}
+
+{% block style_block %}
+<style>
+</style>
+{% endblock %}
+
+
+{% block body_block %}
+<div class="container" id="homepage" style = "background-color: rgb(0, 188, 212);">
+    <h1 style = "padding-top:30vh; color: white;">Welcome to RunViewer</h1>
+    <h2 style = "color: white;">The ultimate free, reliable and professional sport tracking tool.</h2>
+    <div class="container" style = "padding-bottom: 30vh; color: white">
+        <p id="subtitle" style = "color: white">Sign up for free and receive all the benefits</p>
+    </div>
+</div>
+
+<div id = "end">
+        <p>Developed by Capacitive Pendulums</p>
+        <p>For Interactive Systems (H)</p>
+</div>
+
+{% endblock %}

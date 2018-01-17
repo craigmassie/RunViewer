@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block title_block %}
+  Home
+{% endblock %}
+
+<head>
+    <link rel="shortcut icon" href="./../static/images/favicon.ico" type="image/x-icon">
+</head>
+{% block nav_block %}
+<a href="/RunningApp/map/"> <img src="../../static/images/logo.png"></a>
+{% endblock%}
+
+{% block body_block %}
+<a href="/RunningApp/" id="login-register">Logout</a>
+<div id="main" style = "padding-top: 64px;">
+  <div id="legend"></div>
+  <div id = "static">
+    <div id="map_canvas"></div>
+  </div>
+  <div class="image-upload">
+        <label for="fileInput">
+            <img src="../../static/images/upload.png"/>
+        </label>
+    
+        <input id="fileInput" type="file"/>
+    </div>
+<div id = "stats">
+    <div id = "card" style = "border-top: 20px solid #e74c3c">
+        <p id="demo1"></p>
+    </div>
+    
+    <div id = "card" style = "border-top: 20px solid #f1c40f">
+        <p id="demo2"></p>
+    </div>
+
+    <div id = "card" style = "border-top: 20px solid #2ecc71">
+        <p id="demo3"></p>
+    </div>
+
+    <div id = "card" style = "border-top: 20px solid #3498db">
+        <p id="demo4"></p>
+    </div>
+        
+    <div id = "card" style = "border-top: 20px solid #9b59b6">
+        <p id="demo5"></p>
+    </div>
+    
+    <div id = "card" style = "border-top: 20px solid #f39c12">
+        <p id="demo6"></p>
+    </div>
+</div>
+<div id = "achievements">
+        <div id = "achi">
+            <h4>Walk 500 miles</h4>
+            <div style = "height: 20px; width: 80%; background:#B3CCEB; margin-bottom: 4%; margin-left: 10%;">
+                <div id = "goal"></div>
+                </div>
+    
+            <div id = "achis">
+            <div id = "title1" title="You walked for 90% of your workout.">
+                <img id = "ai1" src="../../static/images/me_too.png">
+                <p id="ac 1">Locked</p>
+            </div>
+            
+            <div id = "title2" title="Did you just run a marathon? I bet you did.">
+                <img id = "ai2" src="../../static/images/over26.png">
+                <p id="ac 2">Locked</p>
+            </div>
+    
+            <div id = "title3" title="You'll break something.">
+                <img id = "ai3" src="../../static/images/over9000.png">
+                <p id="ac 3">Locked</p>
+            </div>
+    
+            <div id = "title4" title="Run for a Kit Kat">
+                <img id = "ai4" src="../../static/images/kittokatsu.png">
+                <p id="ac 4">Locked</p>
+            </div>
+    
+            <div id = "title5" title="You ran for 25% of your workout.">
+                <img id = "ai5" src="../../static/images/first.png">
+                <p id="ac 5">Locked</p>
+            </div>
+    
+            <div id = "title6" title="You ran for 50% of your workout.">
+                <img id = "ai6" src="../../static/images/second.png">
+                <p id="ac 6">Locked</p>
+            </div>
+    
+            <div id = "title7" title="Are you sensing a pattern here?">
+                <img id = "ai7" src="../../static/images/third.png">
+                <p id="ac 7">Locked</p>
+            </div>
+    
+            <div id = "title8" title="You ran your entire workout.">
+                <img id = "ai8" src="../../static/images/fourth.png">
+                <p id="ac 8">Locked</p>
+                
+            </div>
+            </div>
+        </div>
+    
+    </div>
+<div id = "restofpage">
+    <ul id="options">
+    </ul>
+</div>
+
+<div id = "end">
+    <p>Developed by Capacitive Pendulums</p>
+    <p>For Interactive Systems (H)</p>
+</div>
+
+{% endblock %}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+		
+<head lang="en">
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="IS Project">
+	<meta name="author" content="IS">
+
+	<!-- Bootstrap core CSS -->
+	<link href="http://v4-alpha.getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="../../static/css/application.css" type="text/css" media="screen" charset="utf-8" />
+
+	<title>
+		RunViewer -
+		{% block title_block %}
+		{% endblock %}
+	</title>
+	{% block style_block %}
+	{% endblock %}
+	<link rel="shortcut icon" href="../../static/images/logo1.png" type="image/x-icon">
+</head>
+
+<nav>
+		<div class = "icon">
+			{% block nav_block %}
+			<a href="/RunningApp/"> <img src="../../static/images/logo.png"></a>
+			<a href="{% url 'login' %}" class="btn btn-default" id="login-register">Login / Sign Up</a>
+			{% endblock %}
+		</div>
+</nav>
+
+<body>
+		
+  {% block body_block %}
+  
+
+  {% endblock %}
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+	<script src="https://npmcdn.com/bootstrap@4.0.0-alpha.5/dist/js/bootstrap.min.js"></script>
+	
+	<script src="../../static/javascript/parseISO8601.js" type="text/javascript" charset="utf-8"></script>
+	<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=false&amp;key=AIzaSyCdevciKRuAhrfBB3hEeiZcMwOCnRY2Vmc" type="text/javascript"></script>
+	<script src="../../static/javascript/gpx.js" type="text/javascript" charset="utf-8"></script>
+</body>
+
+
+</html>
