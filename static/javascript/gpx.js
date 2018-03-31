@@ -17,6 +17,9 @@ function decimalToHex(d, padding) {
 }
 
 document.getElementById('fileInput').onchange = function () {
+	document.getElementById('openwarn').remove();
+	document.getElementById('legend').style.visibility='visible';
+	document.getElementById('static').style.pointerEvents='auto';
 	var f = this.value;
 	f = f.replace(/.*[\/\\]/, '');
 
